@@ -1,5 +1,5 @@
 FROM ubuntu
-ARG DEBIAN_FRONTENE=noninteracitve
+ARG DEBIAN_FRONTEND=noninteracitve
 RUN apt-get update
 RUN apt-get install -y apache2 && apt-get clean
 ENTRYPOINT apachectl -D FOREGROUND
